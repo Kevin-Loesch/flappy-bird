@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+#game{
+    animation: corfundo 2s infinite reverse;
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    background-size: cover;
+}
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:400px}
+    100%{left:-50px}
+}
+#hole{
+    width: 50px;
+    height: 150px;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+    background-color: black;
+}
+#character{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+    animation: corfundo 2s infinite;
+}
+@keyframes corfundo{
+    0%{background-color: blue;}
+    20%{background-color: rgb(0, 204, 255);}
+    40%{background-color: rgb(68, 255, 47);}
+    60%{background-color: rgb(255, 0, 144)}
+    80%{background-color: rgb(221, 255, 0);}
+    100%{background-color: rgb(255, 0, 0);}
+}
+#h1{
+    animation: cor 2s infinite;
+    text-align: center;
+}
+#h2{
+    animation: cor 2s infinite reverse;
+    text-align: center;
+    text-decoration: none;
+}
+@keyframes cor{
+    0%{color: blue;}
+    20%{color: rgb(0, 204, 255);}
+    40%{color: rgb(68, 255, 47);}
+    60%{color: rgb(255, 0, 144)}
+    80%{color: rgb(221, 255, 0);}
+    100%{color: rgb(255, 0, 0);}
+}
